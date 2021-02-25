@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우리은행 시니어플러스</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/index.css">
+    <title>우리은행 시니어플러스</title>
 </head>
 <body>
     <a href="#content" class="skip">본문바로가기</a>
@@ -80,21 +83,60 @@
                         </div>
                     </div>
                 </div>
-                <article class="event">
-                <h3>이벤트</h3>
-                <img src="images/img_banner.png" alt="">
-                <a href="" class="btn_more">자세히 보기</a>
-                </article>
-                <article class="recom">
-                    <h3>시니어 추천 금융상품</h3>
-                    <div>
+                <div class="btm">
+                    <article class="event">
+                        <h3>이벤트</h3>
+                        <img src="images/img_banner.jpg" alt="">
+                        <a href="" class="btn_more">자세히 보기<i class="xi-angle-right-min"></i></a>
+                    </article>
+                    <article class="recom">
+                        <h3>시니어 추천 금융상품</h3>
+                        <div class="swiper-container slide2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card_info">
+                                        <div class="card">
+                                            <img src="images/img_card.png" alt="">
+                                            <div>
+                                                <button><i class="xi-heart"></i>관심추가</button>
+                                                <button><i class="xi-pen"></i>신청하기</button>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h4>우리국민연금증카드</h4>
+                                            <p>
+                                                국민연금수급자임을 증명하는 신분증 기능에 버스요금 매월 5천원 지원과 차별화
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">Slide 2</div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
 
-                    </div>
-                    <a href="" class="btn_more">자세히 보기</a>
-                </article>
+                        <a href="" class="btn_more">자세히 보기<i class="xi-angle-right-min"></i></a>
+                    </article>
+                </div>
             </div>
         </section>
         <div style="height:500px;"></div>
     </main>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
 </body>
 </html>
