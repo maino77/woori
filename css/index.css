@@ -40,6 +40,7 @@ header .btm .spot button { width: 59px; height: 59px; background: none; color: #
 .block .tit p { padding: 0 0 40px; font-size: 21px; color:#666; line-height:1;}
 
 /* 금융서비스 */
+.service {padding: 0 0 147px;}
 .service .banner > div { width: 580px; color:#fff;}
 .service .banner .left {float: left; background: url(../images/bg_ad2.png) no-repeat left top}
 .service .banner .left div { float: right; background: linear-gradient(to right, #3194d5, #4fb2f6);}
@@ -69,10 +70,42 @@ text-align: center;}
 .service .card_info .info p:before {content: ""; position: absolute; left: 0; top: 21px; width: 36px; height: 2px; background: #288bcc;}
 
 .service .slide2 { border-top: 2px solid #333; padding: 20px 0 0; height: 224px; box-sizing: border-box;}
-.service .slide2 .control {position: absolute; left: 0; bottom: 0;}
+.service .slide2 .control {position: absolute; left: 256px; bottom: 0; z-index:100;}
 .service .slide2 .control button {width: 75px; height: 35px; cursor: pointer;}
+.service .slide2 .control button ~ button {border-left: 1px solid #ddd;}
 .service .slide2 .control button.prev { background: url(../images/sArrow_prev.png) no-repeat center;}
 .service .slide2 .control button.next { background: url(../images/sArrow_next.png) no-repeat center;}
+
+/* 관심정보 */
+.fav_info { background: #ccc; padding: 0 0 100px;}
+.fav_info .left {float: left; width: 384px;}
+.fav_info .left > a { display: block; width: 384px; height: 65px; background: #3f69b8; border-radius: 5px; font-size: 19px; color:#fff;
+font-weight: bold; line-height: 65px; text-align: center;}
+.fav_info .left > a span { color:#ffc820;}
+.fav_info .left .thoumb {padding: 30px 0 0;}
+.fav_info .left .thoumb img {width: 100%;}
+.fav_info .left .thoumb p { position: relative; padding: 33px 0 22px; margin: 0 0 20px; font-size: 15px; color:#288bcf; line-height: 1;}
+.fav_info .left .thoumb p:after {content:""; position: absolute; left: 0; bottom: -1px; width: 36px; height: 1px; background: #288bcf;}
+.fav_info .left .thoumb span { font-size: 19px; color: #333; font-weight: bold;}
+.fav_info .right { float: right; width: 792px;}
+
+.tab_type1 {display:flex; border: 1px solid #e4e4e4; border-radius: 5px;}
+.tab_type1 li { flex:1;}
+.tab_type1 li a { display: block; background: #fff; font-size: 17px; color: #333; text-align: center; line-height: 62px;}
+.tab_type1 li a:hover { background: #f5f5f5; color: #288bcc;}
+.tab_type1 li:first-child a { border-radius:  5px 0 0 5px;}
+.tab_type1 li:last-child a { border-radius:  0 5px 5px 0;}
+.tab_type1 li ~ li { border-left: 1px solid #e4e4e4;}
+.tab_type1 li i {color: #4fb2f6;}
+.tab_type1 li i:before { margin: 0 3px 0 0; }
+.info_list { margin: 30px 0 0; border-top:2px solid #288bcc;}
+.info_list li { border-bottom: 1px solid #eaeaea; background: #fff;}
+.info_list li a {display: block; position: relative; line-height: 82px; font-size: 19px; color: #333;}
+.info_list li a:after {content: ""; position: absolute; right:0; top: 50%; width:26px; height: 26px; border-radius: 100%;
+ border: 1px solid #ddd; background: url(../images/sBtn_next3.jpg) nore-repeat center; transform: translateY(-50%);}
+.info_list li a strong {display: inline-block; padding: 0 0 0 30px; width: 130px; font-size: 15px; color: #288bcc}
+
+
 
 .btn_more { position: absolute; right: 0; top: 0; width: 136px; line-height: 38px; border: 1px solid #cdcdcd;
   border-radius: 4px; font-size: 16px; color:#8a8a8a; text-align:center;}
