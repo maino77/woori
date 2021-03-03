@@ -60,10 +60,10 @@ text-align: center;}
 
 .service .card_info > div { float: left;}
 .service .card_info .card { position: relative; font-size: 0;}
-.service .card_info .card div { position: absolute; left: 0; right: 0; bottom:0; background: rgba(255,255,255,.8);}
-.service .card_info .card div:before { content: ""; Position: absolute; left: 50%; height: 100%; width: 1px; background: #bfc0c2; }
-.service .card_info .card button { width: 50%; height: 45px; background: none; font-size: 15px; color:#666; cursor: pointer;}
-.service .card_info .card button:before { display: inline-block; transform: translate(-4px, 3px);}
+.btn_func { position: absolute; left: 0; right: 0; bottom:0; background: rgba(255,255,255,.8);}
+.btn_func:before { content: ""; Position: absolute; left: 50%; height: 100%; width: 1px; background: #bfc0c2; }
+.btn_func button { width: 50%; height: 45px; background: none; font-size: 15px; color:#666; cursor: pointer;}
+.btn_func button:before { display: inline-block; transform: translate(-4px, 3px);}
 .service .card_info .info { padding: 0 0 0 35px; width: 295px;}
 .service .card_info .info h4 {font-size: 26px; color: #333; line-height: 1;}
 .service .card_info .info p {position: relative; padding: 36px 0 0; font-size: 18px; color:#666; letter-spacing: -0.5px;}
@@ -77,7 +77,7 @@ text-align: center;}
 .service .slide2 .control button.next { background: url(../images/sArrow_next.png) no-repeat center;}
 
 /* 관심정보 */
-.fav_info { background: #ccc; padding: 0 0 100px;}
+.fav_info { background: #f9f9f9; padding: 0 0 100px;}
 .fav_info .left {float: left; width: 384px;}
 .fav_info .left > a { display: block; width: 384px; height: 65px; background: #3f69b8; border-radius: 5px; font-size: 19px; color:#fff;
 font-weight: bold; line-height: 65px; text-align: center;}
@@ -101,9 +101,34 @@ font-weight: bold; line-height: 65px; text-align: center;}
 .info_list { margin: 30px 0 0; border-top:2px solid #288bcc;}
 .info_list li { border-bottom: 1px solid #eaeaea; background: #fff;}
 .info_list li a {display: block; position: relative; line-height: 82px; font-size: 19px; color: #333;}
-.info_list li a:after {content: ""; position: absolute; right:0; top: 50%; width:26px; height: 26px; border-radius: 100%;
- border: 1px solid #ddd; background: url(../images/sBtn_next3.jpg) nore-repeat center; transform: translateY(-50%);}
+.info_list li a:after {content: ""; position: absolute; right:30px; top: 50%; width:26px; height: 26px; border-radius: 100%;
+ border: 1px solid #ddd; background: url(../images/sBtn_next3.jpg) no-repeat center; background-size: 8px; transform: translateY(-50%);}
 .info_list li a strong {display: inline-block; padding: 0 0 0 30px; width: 130px; font-size: 15px; color: #288bcc}
+
+.education h3 { padding: 0 0 28px; font-size: 23px; color:#333; line-height: 1;}
+.education h3 span { color: #288bcc;}
+.education .edu_warp {display: flex; justify-content: space-between;}
+.education .edu_warp .left {width: 580px;}
+.education .edu_warp .left a {display: block; padding: 72px 50px; height: 544px; background: url(../images/opice2.png) no-repeat center / auto 100%;
+ border-radius: 4px; box-sizing: border-box; color:#fff;}
+.education .edu_warp .left a strong { display: block; width: 330px; padding: 0 0 16px; font-size: 27px; line-height: 38px;} 
+.education .edu_warp .left a p { padding: 0 0 35px; width: 255px; font-size: 16px; line-height: 26px;}
+.education .edu_warp .left a span { display: block; width: 140px; line-height: 40px; text-align: center;
+  border:1px solid #fff; border-radius: 6px; font-size: 13px;}
+.education .edu_warp .right {width: 580px;}
+.education .edu_warp .right > div {position: relative;}
+.education .edu_warp .right > div ~ div {margin: 55px 0 0;}
+.education .info_wrap {display: flex; justify-content: space-between; padding: 20px 0 0; border-top: 2px solid #333;}
+.education .info_wrap .img {overflow: hidden; position: relative; width: 249px; height: 198px;}
+.education .info_wrap .img img { width: 100%; height: 100%;}
+.education .info_wrap .info {width: 296px;}
+.education .info_wrap .info a {overflow: hidden; display: block; width: 296px; font-size: 23px; color:#333;
+white-space: nowrap; text-overflow: ellipsis; line-height: 1; margin: 0 0 25px;}
+.education .info_wrap .info li { padding: 0 0 17px; font-size: 17px; color: #787878; line-height: 1;}
+.education .info_wrap .info li strong { display: inline-block; width: 44px; color:#222;}
+.education .info_wrap .info p { font-size: 17px; color: #666;}
+
+.trip { background:url(../images/trip.jpg) no-repeat center top;}
 
 
 
@@ -111,3 +136,7 @@ font-weight: bold; line-height: 65px; text-align: center;}
   border-radius: 4px; font-size: 16px; color:#8a8a8a; text-align:center;}
 .service .event i:before{margin: 0 0 0 8px;}
 .service .recom i:before{margin: 0 0 0 8px;}
+.btn_func { position: absolute; left: 0; right: 0; bottom:0; background: rgba(255,255,255,.8); font-size: 0;}
+.btn_func:before { content: ""; Position: absolute; left: 50%; height: 100%; width: 1px; background: #bfc0c2; }
+.btn_func button { width: 50%; height: 45px; background: none; font-size: 15px; color:#666; cursor: pointer;}
+.btn_func button:before { display: inline-block; transform: translate(-4px, 3px);}
