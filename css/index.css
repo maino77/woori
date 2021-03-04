@@ -105,6 +105,7 @@ font-weight: bold; line-height: 65px; text-align: center;}
  border: 1px solid #ddd; background: url(../images/sBtn_next3.jpg) no-repeat center; background-size: 8px; transform: translateY(-50%);}
 .info_list li a strong {display: inline-block; padding: 0 0 0 30px; width: 130px; font-size: 15px; color: #288bcc}
 
+.education { padding: 0 0 104px;}
 .education h3 { padding: 0 0 28px; font-size: 23px; color:#333; line-height: 1;}
 .education h3 span { color: #288bcc;}
 .education .edu_warp {display: flex; justify-content: space-between;}
@@ -117,7 +118,7 @@ font-weight: bold; line-height: 65px; text-align: center;}
   border:1px solid #fff; border-radius: 6px; font-size: 13px;}
 .education .edu_warp .right {width: 580px;}
 .education .edu_warp .right > div {position: relative;}
-.education .edu_warp .right > div ~ div {margin: 55px 0 0;}
+.education .edu_warp .right > div ~ div {margin: 53px 0 0;}
 .education .info_wrap {display: flex; justify-content: space-between; padding: 20px 0 0; border-top: 2px solid #333;}
 .education .info_wrap .img {overflow: hidden; position: relative; width: 249px; height: 198px;}
 .education .info_wrap .img img { width: 100%; height: 100%;}
@@ -128,9 +129,24 @@ white-space: nowrap; text-overflow: ellipsis; line-height: 1; margin: 0 0 25px;}
 .education .info_wrap .info li strong { display: inline-block; width: 44px; color:#222;}
 .education .info_wrap .info p { font-size: 17px; color: #666;}
 
-.trip { background:url(../images/trip.jpg) no-repeat center top;}
-
-
+.trip { padding: 0 0 100px; background:url(../images/trip.jpg) no-repeat center top;}
+.trip .tit h2, 
+.trip .tit p {color: #fff;}
+.trip .trip_list { display: flex; justify-content: space-between;}
+.trip .trip_list li { position: relative; width: 384px; height: 439px; background:#fff; border-radius: 5px;
+text-align: center;}
+.trip .trip_list li .thoumb {width: 100%; height:212px; border-radius: 5px 5px 0 0;}
+.trip .trip_list li .mark { position: absolute; right: -10px; top: -24px;}
+.trip .trip_list li strong { display: block; padding: 37px 0 15px; font-size: 24px;
+  color: #333; line-height: 1;}
+.trip .trip_list li p { padding: 0 0 20px; font-size: 18px; color:#666; line-height: 28px;}
+.trip .trip_list li a { display: inline-block; width: 148px; line-height: 40px; color:#fff; font-size: 17px; border-radius: 5px;}
+.trip .trip_list li.color1 strong span { color:#ed2626;} /*위메프 색상*/
+.trip .trip_list li.color1 a {background: #ed2626;}
+.trip .trip_list li.color2 strong span { color:#122e80;} /*롯대관광 색상*/
+.trip .trip_list li.color2 a {background: #122e80;}
+.trip .trip_list li.color3 strong span { color:#288bcc;} /*국내여행 색상*/
+.trip .trip_list li.color3 a {background: #288bcc;}
 
 .btn_more { position: absolute; right: 0; top: 0; width: 136px; line-height: 38px; border: 1px solid #cdcdcd;
   border-radius: 4px; font-size: 16px; color:#8a8a8a; text-align:center;}
@@ -140,3 +156,4 @@ white-space: nowrap; text-overflow: ellipsis; line-height: 1; margin: 0 0 25px;}
 .btn_func:before { content: ""; Position: absolute; left: 50%; height: 100%; width: 1px; background: #bfc0c2; }
 .btn_func button { width: 50%; height: 45px; background: none; font-size: 15px; color:#666; cursor: pointer;}
 .btn_func button:before { display: inline-block; transform: translate(-4px, 3px);}
+
